@@ -40,6 +40,12 @@ body {
   font-size: 16px;
 }
 
+.wrapper {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+}
+
 .container {
   width: 100%;
   padding-left: var(--container-padding);
@@ -184,9 +190,37 @@ header .container {
   padding-bottom: 1rem;
 }
 
+footer {
+  font-size: 14px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: var(--color-gray-6);
+
+  .container {
+    display: flex;
+     flex-direction: column;  /* för att footer är under varandra*/
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .credit, .copyright {
+    /* display: none; */
+    margin: 0;
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+
 @media (min-width: 768px) {
   .container {
     max-width: 720px;
+    flex-direction: row;
   }
 
   .btn-toggle-switch .label {
@@ -197,6 +231,18 @@ header .container {
 
   header .container {
     gap: 3rem;
+  }
+
+  footer .container {
+    flex-direction: row; 
+    justify-content: center;
+     gap: 0.25rem;      /* ändrar gapen på desktop och tablet mode */
+  }
+  footer {
+    .credit, .copyright {
+      text-align: center; 
+      
+    }
   }
 }
 
