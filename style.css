@@ -13,7 +13,7 @@
   --color-gray-1: #F3F6FF;
   --color-white: #FFFFFF;
 
-  --color-gradient: ;
+  --color-gradient: '';
 
   --container-padding: 1rem;
   --transition-time: all 0.2s;
@@ -44,6 +44,7 @@ body {
   display: grid;
   grid-template-rows: auto 1fr auto;
   height: 100vh;
+  padding: 0 1rem;
 }
 
 .container {
@@ -95,9 +96,9 @@ a:hover {
 }
 
 .btn-toggle-switch {
-display: flex;
-align-items: center;
-gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .btn-toggle-switch .label {
@@ -190,6 +191,57 @@ header .container {
   padding-bottom: 1rem;
 }
 
+/* .newsletter {
+  display: grid;
+  place-items: center;
+  
+  margin-bottom: 1rem;
+}
+
+.news-card {
+  background-color: var(--color-gray-1);
+  padding: 1rem;
+  border-radius: .5rem;  
+  max-width: 706px;
+  margin: 0 auto;
+
+  display: grid;
+  /* justify-items: center; */
+  /* grid-template-columns: auto 1fr;
+  grid-template-areas:
+    "bell text"
+    "bell text"
+    "email email";
+  align-items: center;
+  
+  gap: 1rem;
+} */
+
+/* .bell-box { */
+  /* display: inline-block; */
+  /* grid-area: bell;
+  justify-self: start;
+}
+
+.bell-box img {
+  padding-bottom: 2rem; 
+    
+}
+
+.text-center {
+  grid-area: text;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+} 
+
+#email-button {
+  grid-area: email;
+  justify-self: center;
+}  */
+
+
 footer {
   font-size: 14px;
   padding-top: 1rem;
@@ -210,6 +262,7 @@ footer {
     text-align: center;
   }
 }
+
 
 
 #brands {
@@ -255,13 +308,15 @@ footer {
   footer .container {
     flex-direction: row; 
     justify-content: center;
-     gap: 0.25rem;      /* ändrar gapen på desktop och tablet mode */
+     gap: 0.25rem; /* ändrar gapen på desktop och tablet mode */
   }
+
   footer {
     .credit, .copyright {
       text-align: center; 
-      
+
     }
+
   }
   #brands {
     display: block;
@@ -277,6 +332,12 @@ footer {
   #brand-5, #brand-6 {
     display: none;
   }
+
+  /* .news-card {
+    margin: 0 1rem;
+    padding: 1rem;
+    width: auto;
+  } */
 }
 
 @media (min-width: 1400px) {
