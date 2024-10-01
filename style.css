@@ -258,6 +258,89 @@ footer {
     }
   }
 
+  @media (min-width: 1400px) {
+    .transactions {
+      margin-top: 10rem;
+      background-color: var(--color-gray-1);
+    }
+    .transactions-iphone {
+      
+      h1 {
+        text-align: center;
+        font-size: 42px;
+        padding-top: 30px;
+      }
+
+      .transaction-img {
+        align-items: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding-left: 60px;
+      }
+
+      .transaction-history {
+        text-align: center;
+        
+        h4 {
+          font-size: 24px;
+        }
+
+        p {
+          color: var(--color-gray-7);
+          padding-bottom: 80px;
+        }
+      }
+    }
+  }
+
+  .simple-btn:hover {
+    filter: brightness(1.2);
+    transition: filter 0.3s ease;
+    cursor: pointer;
+  }
+
+  @media (min-width: 1400px) {
+    .simple-transfer {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+    }
+
+    .simple-transfer-text {
+      padding-top: 90px;
+      padding-left: 90px;
+
+      h2 {
+        font-size: 32px;
+        font-weight: 130px;
+      }
+      i {
+        color: var(--color-primary);
+        
+      }
+      p {
+        font-size: 16px;
+        color: var(--color-gray-7);  
+      }
+
+      .checkmark-text {
+        display: flex;
+        align-items: center; 
+        gap: 0.5rem; 
+        margin-bottom: 1rem; 
+      }
+
+      .simple-btn {
+        cursor: pointer;
+        padding-top: 20px;
+      } 
+    }
+
+    .square-graph {
+        padding-top: 100px;
+        padding-left: 50px;
+    }
+  }
   
 .icons {
   display: grid;
@@ -290,7 +373,37 @@ footer {
   }
 }
 
+@media (min-width: 1400px) {
+  .transfer-payments {
+    display: flex;
+    padding-left: 80px;
+  }
 
+  .receive-text {
+    padding-left: 100px;
+
+    h2 {
+      font-size: 32px;
+      font-weight: 130px;
+      padding-bottom: 40px;
+      padding-top: 40px;
+    }
+  }
+  
+  .receiver {
+    display: flex;
+    gap: 20px;
+
+    p {
+      font-size: 16px;
+      color: var(--color-gray-7);
+    }
+  }
+
+  .simple-btn {
+    padding-top: 30px;
+  }
+}
 
 #brands {
   display: none;
