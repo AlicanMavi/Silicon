@@ -410,6 +410,7 @@ footer {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 100px;
+  padding-bottom: 60px;
 }
 .client-page-reviews {
   background-color: var(--color-gray-1);
@@ -537,6 +538,85 @@ footer {
   }
 }
 
+.input-group {
+  display: flex;
+  .form-input {
+    border-radius: .5rem 0 0 .5rem;
+  }
+
+  .btn-form {
+    border-radius: 0 .5rem .5rem 0;
+  }
+}
+
+.form-input {
+  border: 1px solid var(--color-dark);
+  padding: .3em;
+  font-size: 1.2rem; 
+}
+
+.btn-form {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: .7em 2em;
+  border: 0;
+  font-size: 1rem;
+}
+
+.input-group {
+  
+   img {
+    position: absolute;
+    padding-left: .5rem;
+    padding-top: .6rem;
+   }
+
+   button {
+    margin-right: 100px;
+
+   }
+}
+
+.email {
+  padding-left: 2rem;
+}
+
+.btn-form:hover {
+  filter: brightness(1.2);
+  transition: filter 0.3s ease;
+  cursor: pointer;
+}
+
+.form-with-bell {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;  
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  background-color: var(--color-gray-1);
+  border-radius: .5rem;
+}
+
+.subscribe {
+  display: flex;
+  align-items: center;  
+  gap: 15px;            
+  
+  img {
+    margin-left: 60px;
+    width: 60px;
+    height: 60px;
+  }
+
+  h4 {
+    font-size: 20px;
+    font-weight: 100px;
+    margin-left: 50px;
+  }
+}
+
 #brands {
   display: none;
   padding-top: 2rem;
@@ -582,15 +662,14 @@ footer {
   footer .container {
     flex-direction: row; 
     justify-content: center;
-     gap: 0.25rem; /* ändrar gapen på desktop och tablet mode */
+    gap: 0.25rem; /* ändrar gapen på desktop och tablet mode */
+    margin-bottom: 30px;
   }
 
   footer {
     .credit, .copyright {
       text-align: center; 
-
     }
-
   }
 
   #brands {
@@ -600,7 +679,6 @@ footer {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      
     }
   }
 
@@ -641,10 +719,8 @@ footer {
   background: linear-gradient(0deg, rgba(99,102,241,0.1) 0%, rgba(218,70,239,0.05) 42%, rgba(241,244,253,0.07) 83%);
   padding-bottom: 2rem;
   
-
   overflow: hidden;
   
-
   @media (min-width: 768px) {
     padding-bottom: 0;
   }
@@ -663,7 +739,6 @@ footer {
     }
 
     @media (min-width: 1400px) {
-     
       grid-template-columns: 2fr 3fr;
       grid-template-areas:    "headline images"
                               "content images";
